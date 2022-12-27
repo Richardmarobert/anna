@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('anna-config',{
+        category: 'config',
+        color: '#af3',
+        defaults: {
+            host: {value:"",required:true},
+            ip: {value:"", required: true},
+            },
+            
+        	credentials:{
+            	{username:"",required: true, type :"text"},
+            	{password:"", required: true, type:"password"},
+            },
+            label : function() {
+            return this.host+":"+this.ip;
+            }
+            
+        
+
+    });
+</s	cript>
+
+<script type="text/html" data-template-name="anna-config">
+    <div class="form-row">
+        <label for="node-config-input-host"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-config-input-host" placeholder="smile">
+    </div> 
+    <div class="form-row">
+        <label for="node-config-input-ip"><i class="fa fa-tag"></i> ip adres</label>
+        <input type="text" id="node-config-input-ip" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-username"><i class="fa fa-tag"></i> smile</label>
+        <input type="text" id="node-config-input-username" placeholder="">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-password"><i class="fa fa-tag"></i> password</label>
+        <input type="text" id="node-config-input-password" placeholder="">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="anna-config">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

@@ -1,0 +1,12 @@
+{
+  "name": "node-red-contrib-anna",
+  "version": "1.0.0",
+  "description": "anna",
+
+    "node-red" : {
+          "nodes": {
+            "anna": "anna.js",
+            "anna-config": "anna-config.js"
+          	}
+    }
+}
